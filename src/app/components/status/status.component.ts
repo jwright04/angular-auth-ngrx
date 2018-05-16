@@ -10,7 +10,8 @@ import {GetStatus} from '../../store/actions/auth.actions';
 })
 export class StatusComponent implements OnInit {
 
-  constructor(private store: Store<AppState>) { }
+  constructor(private store: Store<AppState>) {
+  }
 
   ngOnInit() {
     this.store.dispatch(new GetStatus);
